@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+  .bungkus{
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.5);
+  }
+    .input-login{
+      width:75%;
+    
+      padding:30px;
+      box-shadow:0px 0px 0px rgba(1,1,1,0.9);
+      margin:auto;
+      border-radius: 10px;
+      margin-top:25%;
+      position:relative;
+      display: block;
+      height: 80%;
+    }
+    .input:valid ~ .email,
+    .input:focus ~ .email{
+      transform:translateY(-30px);
+      font-size:15px;
+      color:#572aba;
+    }
+    .pw:valid ~ .password,
+    .pw:focus ~ .password{
+      transform:translateY(-30px);
+      font-size:15px;
+      color:#572aba;
+    }
+    .email{
+      color:grey;
+      position:absolute;
+      bottom:98px;
+      transition:all 0.3s ease;
+      left:15%;
+      font-size:17px;
+    }
+    .password{
+      color:grey;
+      position:absolute;
+      bottom:25px;
+      transition:all 0.3s ease;
+      left:15%;
+      font-size:17px;
+    }
+    h2{
+      top:0px;
+      background-image:linear-gradient(60deg,#7f4fff,#32247c,#332eca);
+      -webkit-background-clip:text;
+      background-clip: text;
+      background-size:200%;
+      color:transparent;
+      font-family: "Times New Roman",Sans-Serif;
+      font-weight:bold;
+      font-size:2rem;
+      animation: animate 2s linear infinite alternate;
+    }
+    @keyframes animate{
+      0%{
+        background-position:left;
+      }
+      100%{
+        background-position:right;
+      }
+    }
+    body{
+      background:linear-gradient(-60deg,#560bdd,#572aba);
+      background-repeat:no-repeat ;
+      min-height:100vh;
+     font-family: "Consolas",Sans-Serif;
+    }
+    .input{
+    margin-top:25%;
+    width:100%;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+    font-size: 17px;
+    border-bottom:1px solid silver;
+    }
+    .pw{
+      margin-top:25%;
+    width:100%;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+    font-size: 17px;
+    border-bottom:1px solid silver;
+    }
+ .bungkus{
+   width:75%;
+   background:white;
+   margin:auto;
+   border-radius:10px;
+   
+ }
+  .btn1{
+ background:linear-gradient(90deg,#572aba,blue);
+  } 
+  .btn1:hover{
+ background:linear-gradient(90deg,#572aba,blue);
+ animation:button 5s linear infinite;
+  } 
+  @keyframes button{
+    0%{
+      filter:hue-rotate(0deg);
+    }100%{
+      filter:hue-rotate(360deg);
+    }
+  }
+    .input:focus{
+      box-shadow: none;
+    }
+    .pw:focus{
+      box-shadow: none;
+    }
+    /*media screen responsive*/
+   @media (min-width:768px){
+    .input{
+    margin-top:30%;
+    height:100%;
+    width:100%;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+    font-size: 17px;
+    border-bottom:1px solid silver;
+    }
+    .pw{
+    margin-top:30%;
+    height:100%;
+    width:100%;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+    font-size: 17px;
+    border-bottom:1px solid silver;
+    }
+    .input:focus~.email,
+    .input:valid~.email{
+      transform:translateY(-19px);
+      font-size:35px;
+    }
+    .pw:focus~.password,
+    .pw:valid~.password{
+      transform:translateY(-10px);
+      font-size:35px;
+    }
+    .btn1{
+      font-size:2rem;
+      font-weight:b;
+    }
+      .email{
+        top:43%;
+        left:5%;
+        font-size: 55px;
+      }
+      .password{
+        font-size: 55px;
+        top:80%;
+        left:5%;
+      }
+     .input-login{
+       margin-top:50%;
+    }
+    h2{
+      font-size: 3.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="bungkus text-center">
+    <div class="input-login text-center">
+  <h2 class="text-center">Log in</h2>
+    <input type="email" class="input form-control" required></input>
+    <label class="email">Email User</label>
+    <input type="password" class="pw form-control" required></input>
+    <label class="password">Password</label>
+  </div>
+    <button type="submit" class="btn1 btn btn-primary col-sm-12">Submit</button>
+  </div>
+    
+</body>
+</html>
